@@ -1,5 +1,5 @@
 //提前打开AUTO和加速,刷取7000每3分钟
-function events1(control = 0) {
+function event1(control = 0) {
     while (1) {
         switch (control) {
             // 1: 荒屋

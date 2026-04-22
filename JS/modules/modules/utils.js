@@ -8,3 +8,11 @@ function TextClick(Text,x=0,y=0) {
         }
         else return false;
 }
+function WaitFor(next) {
+    return  global.ocrData.results.find(o => o.text.includes(next));
+}
+
+function press(position) {
+        longClick(position.x,position.y);
+        return true;
+}
