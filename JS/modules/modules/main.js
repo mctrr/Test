@@ -1,3 +1,4 @@
+import {events1} from "event1";
 console.show();
 console.clear();
 setScreenMetrics(1080,2400)
@@ -9,7 +10,7 @@ if (!images.requestScreenCapture()) {
 }
 let ocr_thread = threads.start(ocr_thread);
 let startNetworkGuard = threads.start(startNetworkGuard);
-let ts_moneyget = threads.start(ts_moneyget);
+let event1 = threads.start(event1);
 // 维持主线程
 setInterval(() => { }, 10000);
 events.on("exit", () => {

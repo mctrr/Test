@@ -15,3 +15,4 @@ global.cp = {
     player6:         { x: 900,  y: 2200 },
 
 };
+
